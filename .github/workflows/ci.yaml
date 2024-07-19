@@ -36,4 +36,5 @@ jobs:
           datatrails-secret: ${{ env.DATATRAILS_SECRET }}
           subject: ${{ env.FEED }}
           payload-file: "./buildOutput/attestation.json"
+          payload-location: "http://example.com/attestation.json"
           content-type: "application/vnd.unknown.attestation+json"
