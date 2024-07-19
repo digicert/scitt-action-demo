@@ -35,5 +35,5 @@ jobs:
           datatrails-client_id: ${{ env.DATATRAILS_CLIENT_ID }}
           datatrails-secret: ${{ env.DATATRAILS_SECRET }}
           subject: ${{ env.FEED }}
-          payload: "./buildOutput/attestation.json"
+          payload-file: "./buildOutput/attestation.json"
           content-type: "application/vnd.unknown.attestation+json"
