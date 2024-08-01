@@ -38,3 +38,8 @@ jobs:
           payload-file: "./buildOutput/attestation.json"
           payload-location: "http://example.com/attestation.json"
           content-type: "application/vnd.unknown.attestation+json"
+      - name: Upload statement
+        uses: actions/upload-artifact@v4
+        with:
+          path: |
+            signed-statement.cbor
